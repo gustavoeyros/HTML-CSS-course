@@ -6,39 +6,144 @@
     </head>
 
     <body> <!--É o conteúdo do documento.-->
+        <main><!--Representa o conteúdo dominante da página-->
             <h1>Resumo</h1> <!--Representa um título para seção-->
         <section> <!--Representa uma seção genérica de um documento ou aplicativo.-->
             <h2>Gustavo Neves</h2>
-            Estudante e desenvolvedor
+            <p>
+                Estudante e desenvolvedor
+            </p> <!--Representa um parágrafo-->
+        
+            <dl>
+                <dt>Telefone</dt>
+                <dd>99 99999-9999</dd>
+                <dt>Website</dt> 
+                <dd>google.com</dd>
+            </dl>
+            
         </section>
 
         <article> <!--Representa uma composição completa ou independente de um documento.-->
             <header> <!--Contém os cabeçalhos das seções, podem agrupar sumário de seções ou algum conteúdo do título.-->
-                Sobre mim
+                <h2>Sobre mim</h2>
             </header>
-            Olá! Meu nome é Gustavo N.Eyros e estou animado para trilha de aprendizagem =D. <aside>Foco no aprendizado!</aside>
+            <p>
+                Olá! Meu nome é Gustavo N.Eyros e estou animado para trilha de aprendizagem =D. <aside>Foco no aprendizado!</aside>
+            </p>
             <footer>
-                Contate-me
+                <p>Contate-me</p>
             </footer> <!-- É o rodapé do seu ancestral, geralmente contém informações sobre a seção, como por exemplo, quem a escreveu, copyright, etc.-->
         </article>
 
         <section>
             <h2>Trilha:</h2>
-            Web development
-            Agile Methodology
-            CyberSec
+            <p>
+                <ul> <!--Uma lista de itens que não necessita de ordem para dar significado.-->
+                    <li>Web development</li> <!--Representa um item da lista-->
+                    <li>Agile Methodology</li>
+                    <li>CyberSec</li>
+                </ul>
+            </p>
         </section>
 
         <section>
             <h2>Habilidades:</h2>
-            HTML
+            <p>
+             HTML
+             Estrutura do site.
+           </p>
+
+            <p>
             CSS
+            Estilização do site.
+            </p>
+
+           <p>
             JS
+            Desenvolver aplicações webs interativas.
+           </p>
+
+            <p>
             NODE.JS
+            Rodar JS no lado do servidor.
+            </p>
         </section>
 
         <section>
+            <h2>Jornada:</h2>
+
+            <table> <!--Consiste em células alinhadas em uma grade bidimensional de slots e podem ter larguras, alturas etc.-->
+                <thead> <!--Linha do cabeçalho para destacar os títulos-->
+                    <tr> <!--Linha da tabela-->
+                        <th>Cargo</th> <!--Cabeçalho-->
+                        <th>Empresa</th>
+                        <th>Anos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Desenvolvedor X</td> <!--Célula ou coluna da tabela.-->
+                        <td>Empresa Y</td>
+                        <td>2 anos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Desenvolvedor Z</td>
+                        <td>Empresa A</td>
+                        <td>5 anos</td>
+                    </tr>
+
+                    <tr>
+                        <td>Desenvolver B</td>
+                        <td>Empresa C</td>
+                        <td>8 anos  </td>
+                    </tr>
+                    
+                </tbody>
+
+                <tfoot> <!--Rodapé da tabela-->
+                    <tr>
+                        <td colspan="2">Total</td> <!--O colspan="2" significa que está cobrindo 2 colunas.-->
+                        <td>15</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+           
+          
+           <!--  <ol reversed>  É uma lista ornada que a ordem interfere no significado
+                <li>
+                    Desenvolvedor X
+                    Empresa Y
+                    2 anos
+                </li>
+                <li>
+                    Desenvolvedor Z
+                    Empresa A
+                    5 anos
+                </li>
+                <li>
+                    Desenvolver B
+                    Empresa C
+                    8 anos
+                </li>
+            </ol> -->
+       
+        
+
+        <section>
             <h2>Portfolio</h2>
+        </section>
+
+        
+
+        <section>
+            <h2>Citações:</h2>
+            <blockquote> <!--É uma citação-->
+                <p>aprender é a única coisa de que a mente nunca se cansa, nunca tem medo, e nunca se arrepende</p>
+            </blockquote>
+            <p>Leonardo da Vinci</p>
         </section>
 
         <section>
@@ -51,5 +156,6 @@
             </h2> 
         </section>
 
+    </main>
     </body>
 </html>
