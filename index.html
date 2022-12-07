@@ -7,7 +7,7 @@
 
     <body> <!--É o conteúdo do documento.-->
 
-        <section>
+        <nav>
             <ul>
                 <li><a href="#aboutme">Sobre mim</a></li>
                 <li><a href="#path">Trilha</a></li>
@@ -17,7 +17,7 @@
                 <li><a href="#quotes">Citações</a></li>
                 <li><a href="#mailingaddress">Endereço</a></li>
             </ul>
-        </section>
+        </nav>
 
         <main><!--Representa o conteúdo dominante da página-->
             <h1>Resumo</h1> <!--Representa um título para seção-->
@@ -168,6 +168,61 @@
                     Estado Z - SP
                 </address>
             </h2> 
+        </section>
+
+        <section id="contactme">
+            <h2>Contate-me</h2>
+            <form action="contactme.html"> <!--Representa um hyperlink que pode ser manipulado e os seus dados podem ser enviados a um servidor web. Action representa a URL aonde os dados recebidos devem ser enviados-->
+                <p>
+                    <label for="name">Nome:</label> <!--Representa uma legenda para um item, no caso, o input.-->
+                    <input type="text" id="name" name="name" required> <!--Um campo do tipo texto, que foi atribuído um nome para ele. No caso, "name". Também foi atribuído um ID para ser utilizado pelo label.-->
+                </p>   
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                
+                <p>
+                    <label for="whycontact">Motivo:</label>
+                    <select name="whycontact" id="whycontact">
+                        <option value="doubt">Dúvida</option>
+                        <option value="jobinterview">Entrevista de emprego</option>
+                    </select>
+                </p>
+
+
+              
+                <p>
+                    <label for="comments">Comentários:</label>
+                    <textarea id="comments" name="comments" rows="2"></textarea>
+                </p>
+
+            <fieldset> <!--Utilizado para agrupar elementos em um formulário.-->
+                <legend>Melhor horário para contato</legend> <!--Representa o título do agrupamento.-->
+                <p>
+                    <label for="contacttime1">Manhã</label>
+                    <input type="radio" id="contacttime1" name="contacttime" value="morning">
+                </p>
+
+                <p>
+                    <label for="contacttime1">Tarde</label>
+                    <input type="radio" id="contacttime2" name="contacttime" value="afternoon">
+                </p>
+
+                <p>
+                    <label for="contacttime1">Noite</label>
+                    <input type="radio" id="contacttime3" name="contacttime" value="night">
+                </p>
+
+                <p>
+                    <label for="asap">Assim que possível</label>
+                    <input type="checkbox" id="asap" name="asap">
+                </p>
+            </fieldset>
+
+                <button type="submit">Enviar</button>
+            </form>
         </section>
 
     </main>
