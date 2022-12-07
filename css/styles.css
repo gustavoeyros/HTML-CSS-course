@@ -1,0 +1,70 @@
+*{ /*Universal Selector*/
+    font-weight: bold;
+}
+
+/*[lang='es']{     -> Attribute Selector
+    font-weight: bold;
+}
+*/
+
+/* [class~='journey']{
+    font-style: italic;
+}  */
+
+.journey{
+    font-style: italic;
+}
+
+#skills{ /* id selector */
+    color: red;
+}
+
+h1, h2{ /* Grouping Selectors */
+    color: purple;
+}
+
+blockquote p{ /* Descendant Combinator */
+    color: green;
+}
+
+form > p{ /* Child Combinator */
+    color: brown;
+}
+
+legend + p{ /* Next-sibling Combinator */
+    color: orange;
+}
+
+h2 ~ blockquote { /* Subsequent-sibling Combinator: */
+    color: fuchsia;
+}
+
+#path>ul>li:nth-child(2n+1){ /* Pseudo-class. Nesse caso, irá pegar os filhos de LI, dividir em 2, e pegar o primeiro elemento de cada. */
+    color: blueviolet;
+}
+
+#journey tbody tr td:nth-of-type(odd){ /* Irá selecionar apenas os elementos do tipo TD, e pegar as posições ímpares */
+    color: cyan;
+}
+
+a:visited{ /* Irá aplicar alguma propriedade após o usuário já ter acessado aquele link. */
+   color: indigo;
+}
+a:hover{ /* Irá aplicar alguma propriedade quando o usuário passar o mouse por cima */
+    color: orange;
+}
+input:focus{ /* Irá aplicar alguma propriedade quando eu estiver selecionando com o teclado. */
+    outline: 2px solid purple;
+}
+
+section:not(#path){ /* Irá aplicar alguma propriedade em tudo que não for o que você especificou dentro de not() */
+    font-style: italic;
+}
+
+p::first-letter{ /* Pseudo-elemento. Irá aplicar alguma propriedade na primeira letra de cada elemento que for um parágrafo. */
+    font-style: italic;
+}
+
+:is(#aboutme, #resume) p{ /*Pseudo-clase. Irá aplicar alguma propriedade em todos os parágrafos que pertencem a #aboutme e #resume. */
+    font-size: 20px;
+}

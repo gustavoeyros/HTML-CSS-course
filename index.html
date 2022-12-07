@@ -3,6 +3,7 @@
     <head> <!--Coleção de metadados-->
         <meta charset="UTF-8"> <!--Conjunto de caracteres suportados nesse documento-->
         <title>HTML & CSS Course</title> <!--É o que irá aparecer na pesquisa do google. É o título do documento.-->
+        <link rel="stylesheet" href="./css/config.css"> <!--Indica um relacionamento com outro link do tipo folha de estilo.-->
     </head>
 
     <body> <!--É o conteúdo do documento.-->
@@ -21,7 +22,7 @@
 
         <main><!--Representa o conteúdo dominante da página-->
             <h1>Resumo</h1> <!--Representa um título para seção-->
-        <section> <!--Representa uma seção genérica de um documento ou aplicativo.-->
+        <section id="resume"> <!--Representa uma seção genérica de um documento ou aplicativo.-->
             <h2>Gustavo Neves</h2>
             <p>
                 Estudante e desenvolvedor
@@ -42,8 +43,8 @@
             </header>
             <p>
                 Olá! Meu nome é Gustavo N.Eyros e estou <em>animado</em><!--Dá ênfase no conteúdo--> para trilha de aprendizagem =D. 
-                <aside><small>Foco no aprendizado!</small></aside> <!--Aside: Conteúdo que não está relacionado diretamente com o conteúdo anterior / Small: Teste pequeno, com pouca importância.-->
             </p>
+            <aside><p><small>Foco no aprendizado!</small></p></aside> <!--Aside: Conteúdo que não está relacionado diretamente com o conteúdo anterior / Small: Texto pequeno, com pouca importância.-->
             <footer>
                 <p>Contate-me</p>
             </footer> <!-- É o rodapé do seu ancestral, geralmente contém informações sobre a seção, como por exemplo, quem a escreveu, copyright, etc.-->
@@ -83,7 +84,7 @@
             </p>
         </section>
 
-        <section id="journey">
+        <section id="journey" class="journey">
             <h2>Jornada:</h2>
 
             <table> <!--Consiste em células alinhadas em uma grade bidimensional de slots e podem ter larguras, alturas etc.-->
