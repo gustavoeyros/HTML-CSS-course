@@ -26,6 +26,7 @@ nav{
 }
 nav ul {
     display: flex; /* Esse elemento se torna um flex-container e podemos manipular os filhos desse elemento de novas maneiras. */
+    justify-content: center;
 }
 nav ul li{
     margin: 0 0.25rem;
@@ -176,6 +177,27 @@ blockquote{
       transform: translate3d(0, 0, 0);
     }
   }
+
+
+@media screen and (max-width:767.9px){ /*Representa que até esse tamanho, as propriedades nos elementos a seguir irão ser aplicadas*/
+    main{
+        grid-template-columns: 25px 1fr 25px;
+    }
+     #aboutme{
+        justify-content: center;
+        text-align: center;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Praticando z-index.  Z-index: É o eixo Z, representando a profundidade, podemos pensar nele como uma imagem tridimensional. */ 
 
