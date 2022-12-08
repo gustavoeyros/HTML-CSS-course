@@ -17,13 +17,17 @@ main{
     margin: 0 auto;
 }
 nav{
+    display: flex;
+    justify-content: center;
     position: sticky;
     top: 0;
-    text-align: center;
+}
+nav ul {
+    display: flex; /* Esse elemento se torna um flex-container e podemos manipular os filhos desse elemento de novas maneiras. */
 }
 nav ul li{
-    display: inline;
     margin: 0 0.25rem;
+    list-style: none;
 }
 .journey{
     font-style: italic;
