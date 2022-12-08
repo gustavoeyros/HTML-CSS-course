@@ -29,6 +29,9 @@ nav ul li{
     margin: 0 0.25rem;
     list-style: none;
 }
+body{
+    display: grid;
+}
 .journey{
     font-style: italic;
 }
@@ -113,10 +116,28 @@ blockquote{
     margin-right: 1em;
 }
 #quotes{
-    display: inline-block;
+   display: grid; /* É uma propriedade que define um layout baseado em grade bidimensional.  */
+   grid-template-columns: 250px 250px; /* Define o tamanho das colunas dentro do grid. */
+   grid-template-rows: 250px 250px;       /*  Define o tamanho das linhas dentro do grid. */
 }
-
-
+.title-quote-1{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: center;
+}
+.title-quote-2{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    text-align: center;
+}
+.quote-2{
+   grid-row-start: 2;
+   grid-column-start: 1;
+}
+.quote-1{
+    grid-row-start: 1   ;
+    grid-column-start: 2;
+}
 /*Praticando z-index.  Z-index: É o eixo Z, representando a profundidade, podemos pensar nele como uma imagem tridimensional. */ 
 
 /* nav{
