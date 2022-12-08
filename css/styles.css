@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap'); /*Importa uma fonte externa*/
+
 *{ /*Universal Selector*/
     box-sizing: border-box; /* Faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura. */
 } 
@@ -41,8 +43,11 @@ body{
 }
 
 h1, h2{ /* Grouping Selectors */
-    color: purple;
+    color: rgb(17, 187, 26);
+    font-family: 'Kanit', sans-serif; /*Define a fonte para o elemento*/
+    text-transform: uppercase; /*Define que todas as letras do elemento irão ficar em maiúsculo*/
 }
+
 
 blockquote p{ /* Descendant Combinator */
     color: green;
@@ -119,6 +124,8 @@ blockquote{
    display: grid; /* É uma propriedade que define um layout baseado em grade bidimensional.  */
    grid-template-columns: 250px 250px; /* Define o tamanho das colunas dentro do grid. */
    grid-template-rows: 250px 250px;       /*  Define o tamanho das linhas dentro do grid. */
+     /* background-image: url("../img/quotes.jpg"); Irá adicionar uma imagem de fundo*/
+   
 }
 .title-quote-1{
     grid-column-start: 2;
@@ -138,6 +145,38 @@ blockquote{
     grid-row-start: 1   ;
     grid-column-start: 2;
 }
+#aboutme img:hover{ 
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+.btn{
+    border: none;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    background-color: black;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(17, 187, 26);
+    color: white;
+    transition: .5s;
+}
+#aboutme h2 {
+    animation: fadeInUp 1s;
+}
+
+@keyframes fadeInUp { /*Animação de um elemento CSS*/
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
 /*Praticando z-index.  Z-index: É o eixo Z, representando a profundidade, podemos pensar nele como uma imagem tridimensional. */ 
 
 /* nav{
