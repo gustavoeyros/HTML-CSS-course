@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap'); /*Importa uma fonte externa*/
 
+:root{
+    --color-green: rgb(17, 187, 26); /*Variável CSS para reutilizar em outros lugares*/
+}
+
 *{ /*Universal Selector*/
     box-sizing: border-box; /* Faz com que o navegador não calcule a dimensão de um elemento somando bordas e margens com altura e largura. */
 } 
@@ -44,7 +48,7 @@ body{
 }
 
 h1, h2{ /* Grouping Selectors */
-    color: rgb(17, 187, 26);
+    color: var(--color-green);
     font-family: 'Kanit', sans-serif; /*Define a fonte para o elemento*/
     text-transform: uppercase; /*Define que todas as letras do elemento irão ficar em maiúsculo*/
 }
