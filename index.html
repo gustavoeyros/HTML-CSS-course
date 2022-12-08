@@ -21,7 +21,6 @@
         </nav>
 
         <main><!--Representa o conteúdo dominante da página-->
-            <img src="./img/sleeping-dog.jpg" alt="sleeping dog">
             <h1>Resumo</h1> <!--Representa um título para seção-->
         <section id="resume"> <!--Representa uma seção genérica de um documento ou aplicativo.-->
             <h2>Gustavo Neves</h2>
@@ -40,6 +39,7 @@
 
         <article id="aboutme"> <!--Representa uma composição completa ou independente de um documento.-->
             <header> <!--Contém os cabeçalhos das seções, podem agrupar sumário de seções ou algum conteúdo do título.-->
+                <img src="./img/sleeping-dog.jpg" alt="sleeping dog" class="aboutme-picture">
                 <h2>Sobre mim</h2>
             </header>
             <p>
@@ -180,18 +180,18 @@
         <section id="contactme">
             <h2>Contate-me</h2>
             <form action="contactme.html"> <!--Representa um hyperlink que pode ser manipulado e os seus dados podem ser enviados a um servidor web. Action representa a URL aonde os dados recebidos devem ser enviados-->
-                <p>
-                    <label for="name">Nome:</label> <!--Representa uma legenda para um item, no caso, o input.-->
+                <p class="contact-field">
+                    <label for="name" class="label-contact">Nome:</label> <!--Representa uma legenda para um item, no caso, o input.-->
                     <input type="text" id="name" name="name" required> <!--Um campo do tipo texto, que foi atribuído um nome para ele. No caso, "name". Também foi atribuído um ID para ser utilizado pelo label.-->
                 </p>   
 
-                <p>
-                    <label for="email">Email:</label>
+                <p class="contact-field">
+                    <label for="email" class="label-contact">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </p>
                 
-                <p>
-                    <label for="whycontact">Motivo:</label>
+                <p class="contact-field">
+                    <label for="whycontact" class="label-contact">Motivo:</label>
                     <select name="whycontact" id="whycontact">
                         <option value="doubt">Dúvida</option>
                         <option value="jobinterview">Entrevista de emprego</option>
@@ -201,7 +201,7 @@
 
               
                 <p>
-                    <label for="comments">Comentários:</label>
+                    <label for="comments" class="label-contact">Comentários:</label>
                     <textarea id="comments" name="comments" rows="2"></textarea>
                 </p>
 

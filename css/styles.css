@@ -19,6 +19,11 @@ main{
 nav{
     position: sticky;
     top: 0;
+    text-align: center;
+}
+nav ul li{
+    display: inline;
+    margin: 0 0.25rem;
 }
 .journey{
     font-style: italic;
@@ -91,6 +96,22 @@ blockquote{
 .resume-fieldset legend{
     padding: 0;
 }
+
+.label-contact{
+    display: block;
+    margin: 0.125rem;
+}
+.contact-field{
+    margin-bottom: 1.25rem;
+}
+.aboutme-picture{
+    float: left; /* Retira o elemento do fluxo normal e é posicionado aonde especificado. Os textos e elementos irão se posicionar ao seu redor. */ 
+    margin-right: 1em;
+}
+#quotes{
+    display: inline-block;
+}
+
 
 /*Praticando z-index.  Z-index: É o eixo Z, representando a profundidade, podemos pensar nele como uma imagem tridimensional. */ 
 
