@@ -91,3 +91,17 @@ blockquote{
 .resume-fieldset legend{
     padding: 0;
 }
+
+/*Praticando z-index.  Z-index: É o eixo Z, representando a profundidade, podemos pensar nele como uma imagem tridimensional. */ 
+
+/* nav{
+    z-index: 10;
+    background-color: red;
+}
+#skills{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: purple;
+    z-index: 11;
+} */
